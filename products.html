@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="cart.js" async></script>
+    <style>
+      main{
+        display: flex;
+        width: 1000px;
+        overflow: scroll;
+        border: 2px solid black;
+        padding-bottom: 20px;
+      }
+      main .product {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <link rel="stylesheet" href="css/cart.css">
+    <title>test</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <main>
+    <!-- product 1 -->
+    <div class="item">
+      <img src="images/products/mask1.jpg" alt="mask1" class="productImage">
+      <p class="productName">Mask 1</p>
+      <p class="productPrice">10</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+
+    <!-- product 2 -->
+    <div class="item">
+      <img src="images/products/mask2.jpg" alt="mask2" class="productImage">
+      <p class="productName">Mask 2</p>
+      <p class="productPrice">8</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+
+    <!-- product 3 -->
+    <div class="item">
+      <img src="images/products/mask3.jpg" alt="mask3" class="productImage">
+      <p class="productName">Mask 3</p>
+      <p class="productPrice">12</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+
+    <!-- product 4 -->
+    <div class="item">
+      <img src="images/products/shirt1.jpg" alt="shirt1" class="productImage">
+      <p class="productName">Shirt 1</p>
+      <p class="productPrice">20</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+
+    <!-- product 5 -->
+    <div class="item">
+      <img src="images/products/shirt2.jpg" alt="shirt2" class="productImage">
+      <p class="productName">Shirt 2</p>
+      <p class="productPrice">20</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+
+    <!-- product 6 -->
+    <div class="item">
+      <img src="images/products/socks.jpg" alt="socks" class="productImage">
+      <p class="productName">Cute Socks</p>
+      <p class="productPrice">5</p>
+      <button type="button" name="addToCart" class="addToCart">Add to cart</button>
+    </div>
+  </main>
+  <!-- Total Price -->
+  <div class="total-price-container">
+    Total Price: <p class="totalPrice"></p>
+    <button type="buy" name="button"><a href="checkout.html" style="color:black;">BUY</a></button>
+  </div>
+
+  <div id="cartlist" class="list">
+  </div>
+  <script>
+    window.onload = productTotalPrice();
+    window.onload = totalPrice();
+  </script>
+
+  </body>
+</html>
